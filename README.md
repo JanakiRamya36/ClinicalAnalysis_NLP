@@ -29,4 +29,8 @@ The primary objectives were:
 - **`ClinicalAnalysis_NLP@article.docx`** – Detailed report on the project  
 - **`README.md`** – Project documentation
 
-##   
+## Author information
+Janaki Ramya Namburu\
+email: janakiramyan@gmail.com\
+LinkedIn: www.linkedin.com/in/janakiramya
+
