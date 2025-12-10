@@ -1,36 +1,49 @@
-# Enhancing Clinical Analysis using NLP
+# Enhancing Clinical Analysis Using NLP
 
-## Project Overview  
-This project leverages Natural Language Processing (NLP) techniques to analyze 398 medical discharge summaries from the DBMI Data Portal of Harvard Medical School. 
-The primary objectives were:  
-1. Classifying smoking status using Naive Bayes models trained on unigram, bigram, and trigram features.  
-2. Extracting and analyzing ALP (Alkaline Phosphatase) values and bone mentions using Named Entity Recognition (NER).  
-3. Exploring relations between ALP and bone mentions to determine potential clinical correlations.  
+## Project Overview
+This project applies Natural Language Processing (NLP) techniques to 398 medical discharge summaries from the DBMI Data Portal (Harvard Medical School). The work focuses on three core tasks:
 
-## Data Analysis 
-- **Smoking Status Classification:**  
-  - Implemented Naive Bayes classifiers with unigram, bigram, and trigram models.  
-  - Achieved 65% accuracy with a bigram-based classifier, significantly improving over unigram (20%) and trigram (6%).  
-- **Named Entity Recognition (NER):**  
-  - Successfully extracted ALP values and bone mentions from medical text using spaCy.  
-  - Achieved 70% accuracy (7 out of 10 instances) in extracting ALP values. 
-- **Relation Extraction (RE):**  
-  - Attempted to identify direct associations between ALP and bone health but found all extracted relations to be false due to syntactic complexity and contextual variations in medical records.   
- 
-## Tools Used  
+1. Classifying smoking status using Naive Bayes models with unigram, bigram, and trigram features.  
+2. Extracting ALP (Alkaline Phosphatase) values and bone-related terms using Named Entity Recognition (NER).  
+3. Exploring potential relationships between ALP values and bone mentions to understand whether text-based signals can assist in clinical interpretation.
+
+## Data Analysis
+
+### **Smoking Status Classification**
+- Developed Naive Bayes models using unigram, bigram, and trigram representations.
+- Performance:
+  - **Bigram model:** ~65% accuracy  
+  - **Unigram model:** ~20%  
+  - **Trigram model:** ~6%
+- The bigram model performed best, capturing more meaningful context compared to other feature sets.
+
+### **Named Entity Recognition (NER)**
+- Used spaCy to extract ALP values and bone-related entities from unstructured clinical text.
+- ALP values were correctly extracted in **70% of cases** (7 out of 10 reviewed instances).
+- The approach highlights both the potential and limitations of pattern-based NER in clinical notes.
+
+### **Relation Extraction (RE)**
+- Attempted to identify direct associations between ALP values and bone mentions.
+- No valid relationships were identified due to sentence complexity and contextual variability.
+- This underscores the challenges of applying RE without large, annotated clinical datasets.
+
+## Tools Used
 - **Programming Language:** Python  
-- **Libraries:** spaCy, Scikit-learn, NLTK, Pandas, NumPy, Matplotlib
+- **Libraries:** spaCy, scikit-learn, NLTK, Pandas, NumPy, Matplotlib
 
-## Repository Structure  
-- **`Project_NER_and_RE.ipynb`** – Jupyter Notebook for Named Entity Recognition (NER) and Relation Extraction (RE)  
-- **`Project_Text_classification.ipynb`** – Jupyter Notebook for Smoking Status Text Classification  
-- **`smoking dataset.csv`** – Clinical text dataset used for analysis  
-- **`ClinicalAnalysis_NLP.pptx`** – Presentation summarizing findings  
-- **`ClinicalAnalysis_NLP@article.docx`** – Detailed report on the project  
-- **`README.md`** – Project documentation
+## Repository Structure
+ 
+- **`Project_NER_and_RE.ipynb`** # NER and relation extraction workflow  
+- **`Project_Text_classification.ipynb`** # Smoking status classification models  
+- **`smoking dataset.csv`** # Dataset for text classification  
+- **`ClinicalAnalysis_NLP.pptx`** # Presentation summarizing findings  
+- **`ClinicalAnalysis_NLP@article.docx`** # Detailed project report
+- **`README.md`** # Project documentation
 
-## Author information
-Janaki Ramya Namburu\
-email: janakiramyan@gmail.com\
-LinkedIn: www.linkedin.com/in/janakiramya
+
+## Author Information
+**Janaki Ramya Namburu**  
+Email: janakiramyan36@gmail.com  
+LinkedIn: https://www.linkedin.com/in/janakiramya  
+
 
